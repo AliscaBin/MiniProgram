@@ -62,5 +62,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handleGetUserInfo(event){
+    console.log(event)
   }
 })
