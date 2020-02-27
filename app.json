@@ -9,7 +9,7 @@
     "navigationBarTitleText": "VC商城",
     "navigationBarTextStyle": "white",
     "backgroundColor": "pink",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "light"
   },
   "tabBar": {
