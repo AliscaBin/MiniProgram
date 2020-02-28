@@ -1,0 +1,28 @@
+<!--pages/button/button.wxml-->
+<text>button属性介绍</text>
+
+<!-- 1.none:没有属性为块级元素 -->
+<button>button</button>
+
+<!-- 2.size='mini':行内元素 -->
+<button size="mini">button</button>
+<button size="mini">button</button>
+
+<!-- 3.type='primary':行内元素 -->
+<view>button属性type介绍</view>
+<button size="mini" type="primary">button</button>
+<button size="mini" type="default">button</button>
+<button size="mini" type="warn">button</button>
+
+<!-- 4.plain:镂空效果 -->
+<view>button属性plain介绍</view>
+<button plain>button</button>
+<button plain loading>button</button>
+
+<!-- 4.disable:禁用 -->
+<view>button属性disable介绍</view>
+<button disabled>button</button>
+
+<!-- 5.hover-class: -->
+<view>button属性hover-class介绍</view>
+<button hover-class="pressed">button</button>
