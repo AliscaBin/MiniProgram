@@ -1,0 +1,14 @@
+/* pages/wxss/wxss.wxss */
+
+.box {
+  color: blue;
+  font-size: 32px;
+}
+
+.view {
+  width: 200rpx;
+  height: 100rpx;
+  border: 30rpx double red;
+  font-size: 64rpx;
+  display: inline-block
+}
