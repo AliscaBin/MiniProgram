@@ -1,0 +1,16 @@
+<!--pages/wxml/wxml.wxml-->
+<text>wxml介绍\n</text>
+<!-- 1. wxml的格式 -->
+<!-- <view></view>
+ <image/>
+ <input/> -->
+<!-- 2. Mustache语法 -->
+<view>------------------</view>
+<view>你好{{name}}</view>
+<view>{{name}} {{learn}}</view>
+<view>{{name+' '+learn}}</view>
+
+<view>{{nowTime}}</view>
+<view>------------------</view>
+<button size="mini" bindtap="handleSwitchColor">切换颜色</button>
+<view class="box {{isActive ? 'acitve':''}}">哈哈哈</view>
