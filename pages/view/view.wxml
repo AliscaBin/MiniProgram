@@ -1,0 +1,15 @@
+<!--pages/view/view.wxml-->
+<text>view 組件介紹\n</text>
+
+<!-- 1.view 基本使用 -->
+<view class="box">文本內容1</view>
+<view>文本內容2</view>
+
+<!-- 2.hover-class:指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 
+hover-stay-time:手指松开后点击态保留时间，单位毫秒,默认400
+hover-stop-propagation:指定是否阻止本节点的祖先节点出现点击态-->
+<view class="box1" hover-class="box2" hover-stay-time="200">
+  <view class="box3" hover-class="box4" hover-stop-propagation>
+    hover-class:单击变色
+  </view>
+</view>

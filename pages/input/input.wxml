@@ -1,0 +1,25 @@
+<!--pages/input/input.wxml-->
+<text>input基本使用</text>
+
+<!-- 1.value:默认值 -->
+<input class="input" value="哈哈"></input>
+
+<!-- 2.type:键盘类型
+text:文本键盘
+number:数字键盘
+password:密码暗文显示
+placeholder:提示信息 -->
+<input class="input" type="text"></input>
+<input class="input" type="number"></input>
+<input class="input" type="password"></input>
+<input class="input" placeholder="请输入你的银行卡密码"></input>
+
+<!-- 3.
+bindinput：
+键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
+bindfocus：
+输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持
+bindblur：
+输入框失去焦点时触发，event.detail = {value: value}	
+ -->
+<input class="input" bindinput="handleBindInput" bindfocus="handleBindFocus" bindblur="handleBindBlur"></input>
