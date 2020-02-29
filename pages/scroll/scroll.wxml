@@ -1,0 +1,25 @@
+<!--pages/scroll/scroll.wxml-->
+<text>scroll-view\n</text>
+
+<!-- 1.水平滚动：scroll-x 
+view 为块级元素，独占一行，设置为行级元素实现水平
+scroll-view:设置属性white-space:nowrap;-->
+<scroll-view scroll-x class="container1">
+  <view wx:for="{{10}}" class="item1">
+    {{item}}
+  </view>
+</scroll-view>
+
+<!-- 2.垂直滚动：scroll-y -->
+<scroll-view scroll-x class="container2" scroll-y>
+  <view wx:for="{{10}}" class="item2">
+    {{item}}
+  </view>
+</scroll-view>
+
+<!-- 其他补充. -->
+<scroll-view scroll-x class="container2" scroll-y bindscroll="handleBindScroll">
+  <view wx:for="{{10}}" class="item2">
+    {{item}}
+  </view>
+</scroll-view>
