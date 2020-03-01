@@ -8,7 +8,10 @@ Page({
     name:"王斌",
     learn:"miniProgram",
     nowTime:new Date().toLocaleString(),
-    isActive:false
+    isActive:false,
+    isShow:true,
+    score:40,
+    movies:['星际穿越','盗梦空间','幻海迷航','盗墓笔记']
   },
 
   /**
@@ -85,5 +88,18 @@ Page({
     this.setData({
       isActive:!this.data.isActive
     })
+  },
+
+  handleSwitchShow(){
+    this.setData({
+      isShow:!this.data.isShow
+    })
+  },
+
+  handleIncreScore(){
+    this.setData({
+      score:this.data.score += 10
+    })
+    console.log(this.data.score)
   }
 })
