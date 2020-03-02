@@ -1,0 +1,58 @@
+<!--pages/wxs/wxs.wxml-->
+<text>WXS：与JavaScript是不同的语言，有自己的额语法，不过基本一致\n</text>
+
+
+<!-- 将数据保留两位小数 -->
+
+<!-- 语法错误 -->
+<!-- <view>{{25.55555.toFixed(2)}}</view> -->
+
+<!-- 语法正确，但是不显示结果，在WXML中是不能直接调用Page/Component中定义的函数的 -->
+<!-- 但是在某些情况下，我们希望使用函数来处理WXML中的数据类似于Vue中的过滤器，这个时候就使用WXS -->
+<!-- <view>{{numberToFixed(25.66666)}}</view> -->
+
+<!-- wxs的定义方式 -->
+<!-- <wxs module="info">
+  //JS
+  var message = "Hello World"
+  var name = "wangbin"
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+
+  //commonjs的模块化写法
+  module.exports = {
+  message:message,
+  name:name,
+  sum:sum
+  }
+</wxs> -->
+
+<!-- 2.2 定义在单独的wxs文件中，在使用<wxs>标签进行导入,src必须使用相对路径，绝对路径会报错 -->
+<wxs src="wxs.wxs" module="info" />
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(1,2)}}</view>
+
+<!-- 2.3wxs的应用 
+对数字保留小数位-->
+<view>----对数字保留小数位----</view>
+<wxs src="../../wxs/format.wxs" module="format" />
+<view>{{format.priceFormat(price,4)}}</view>
+
+<view>----转换时间戳----</view>
+<view selectable>{{format.dateFormat(time,"yyyy-mm-dd hh:MM:ss")}}</view>
+
+<!-- <view selectable>{{format.parse(date)}}</view> -->
+
+
+<button size="mini" bindtap="handleEventClick">事件对象</button>
+
+<view>事件参数的传递</view>
+<view class="box">
+  <block wx:for="{{products}}" wx:key="id" wx:for-index="id" wx:for-item="product">
+    <view class="product" bindtap="handleProduct" data-id="{{id}}" data-product="{{product}}">{{product}}</view>
+  </block>
+</view>
+
+<!-- <view wx:for={{products}}>{{item}}</view> -->
