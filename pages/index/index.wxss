@@ -1,1 +1,22 @@
 /* pages/index/index.wxss */
+.title{
+  color: orange;
+  font-weight: 200;
+}
+
+.content{
+  background-color: blue;
+  font-size: 50rpx;
+}
+
+.red{
+  color:red;
+}
+
+.green{
+  color:green;
+}
+
+.blue{
+  color:blue;
+}

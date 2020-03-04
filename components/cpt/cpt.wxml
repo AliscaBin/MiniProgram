@@ -1,0 +1,4 @@
+<!--components/cpt/cpt.wxml-->
+<text>cpt组件示例\n</text>
+<view class="box">我是cpt组件标题</view>
+<view class="box1">我是cpt组件内容</view>

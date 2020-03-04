@@ -1,0 +1,10 @@
+/* components/cpt/cpt.wxss */
+.box{
+  color: orange;
+  font-size: 46rpx;
+}
+
+.box1{
+  background-color: blue;
+  font-size: 32rpx;
+}

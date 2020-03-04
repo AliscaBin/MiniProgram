@@ -1,0 +1,44 @@
+<!--components/my-mult-slot/my-mult-slot.wxml-->
+<view>我是mult-slot开始</view>
+<view class="slot1"><slot name="slot1"/></view>
+<view class="slot2"><slot name="slot2"/></view>
+<view class="slot3"><slot name="slot3"/></view>
+<view>我是mult-slot结尾</view>
+
+
+<!-- 定义组件的配置选项 -->
+<!-- 
+multipleSlots:在使用多插槽时需要设置为true
+styleIsolation:设置样式的隔离方式
+ -->
+
+ <!-- 外界给组件传入额外的样式 -->
+ <!-- 
+ externalClass:[], 数组内些外部样式名称-->
+
+ <!-- 可以监听properties/data的改变
+ observer:{
+  counter:function(newValue){
+    //监听counter的改变，可传入新值为参数
+  }
+ }
+
+ observers: {
+    'numberA, numberB': function(numberA, numberB) {
+      // 在 numberA 或者 numberB 被设置时，执行这个函数
+      this.setData({
+        sum: numberA + numberB
+      })
+    }
+  }
+
+ -->
+
+<!-- 组件中监听生命周期函数 
+
+1.组件的生命周期
+
+2.所在页面的生命周期
+
+
+-->
