@@ -1,5 +1,9 @@
 //app.js
+import request from './utils/Request.js'
 App({
+  myRequest(){
+    return new request();
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

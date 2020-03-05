@@ -8,8 +8,7 @@
     "navigationBarTitleText": "VC商城",
     "navigationBarTextStyle": "white",
     "backgroundColor": "pink",
-    "enablePullDownRefresh": false,
-    "backgroundTextStyle": "light"
+    "enablePullDownRefresh": false
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
